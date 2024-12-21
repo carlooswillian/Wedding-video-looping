@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Loop</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #000;
+    }
+    .video-container {
+      position: relative;
+      width: 100%;
+      max-width: 100vh; /* Mantém a proporção 9:16 em telas largas */
+      height: auto;
+      aspect-ratio: 9 / 16; /* Garante a proporção 9:16 */
+      overflow: hidden;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="video-container">
+    <iframe 
+      src="https://www.youtube.com/embed/pWFv7RcynIo?autoplay=1&loop=1&playlist=pWFv7RcynIo"
+      allow="autoplay; encrypted-media"
+      allowfullscreen>
+    </iframe>
+  </div>
+</body>
+</html>
