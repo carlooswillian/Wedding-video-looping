@@ -1,21 +1,24 @@
-body {
+/* Remove margens e preenche toda a tela */
+body, html {
   margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Container do vídeo que ocupa toda a tela */
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #000;
 }
 
-.video-container {
-  position: relative;
-  width: 100%;
-  max-width: 100vh; /* Mantém a proporção 9:16 em telas largas */
-  height: auto;
-  aspect-ratio: 9 / 16; /* Garante a proporção 9:16 */
-  overflow: hidden;
-}
-
+/* O iframe ocupa 100% da largura e altura */
 iframe {
   width: 100%;
   height: 100%;
